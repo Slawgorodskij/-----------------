@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>OJJO</title>
+</head>
+<body>
+   
+    <!--sprait-->
+ 	<svg style="display: none;">
+ 		<symbol id="youtube" viewBox="0 0 24 24">
+ 	        <g>
+ 	          <path fill="var(--color-background)" d="M2.093,9.075c0.125,-1.941 1.629,-3.509 3.562,-3.716c2.005,-0.202 4.136,-0.311 6.345,-0.311c2.209,0 4.34,0.109 6.345,0.312c1.933,0.206 3.437,1.774 3.562,3.715c0.061,0.956 0.093,1.933 0.093,2.925c0,0.992 -0.032,1.969 -0.093,2.925c-0.125,1.941 -1.629,3.509 -3.562,3.716c-2.005,0.202 -4.136,0.311 -6.345,0.311c-2.209,0 -4.34,-0.109 -6.345,-0.312c-1.933,-0.206 -3.437,-1.774 -3.562,-3.715c-0.061,-0.956 -0.093,-1.933 -0.093,-2.925c0,-0.992 0.032,-1.969 0.093,-2.925Z"/>
+ 	          <path fill="var(--color-triangle)" d="M15.055,12l-4.909,2.995l0,-5.99l4.909,2.995Z"/>
+ 	       </g>
+ 	   </symbol>
+ 	
+       <symbol id="facebook" viewBox="0 0 16 31">
+ 	        <g><path d="M10.3283 30.1201V16.8016H14.9366L15.6216 11.587H10.3283V8.26547C10.3283 6.76072 10.7583 5.73047 12.9733 5.73047H15.78V1.08134C14.4144 0.938655 13.0417 0.869758 11.6683 0.87497C7.59497 0.87497 4.7983 3.29947 4.7983 7.75035V11.5772H0.219971V16.7918H4.8083V30.1201H10.3283Z"/></g>	
+ 	   </symbol>
+ 	
+       <symbol id="vk" viewBox="0 0 100 100" >
+ 	        <g><path d="M84.418,69.921c-2.527,1.583-12.807,2.054-15.295,0.246c-1.365-0.991-2.613-2.232-3.799-3.412   c-0.828-0.826-1.77-1.227-2.482-2.123c-0.58-0.734-0.979-1.599-1.592-2.321c-1.033-1.215-2.625-2.248-3.885-0.764   c-1.895,2.231,0.299,6.617-2.229,8.285c-0.848,0.56-1.703,0.722-2.762,0.642l-2.346,0.107c-1.379,0.027-3.562,0.039-5.129-0.244   c-1.75-0.315-3.193-1.271-4.773-1.973c-3.002-1.331-5.863-3.145-8.039-5.658c-5.922-6.843-13.877-16.255-16.967-24.859   c-0.637-1.768-2.314-5.267-0.723-6.784c2.164-1.572,12.789-2.017,14.445,0.416c0.674,0.987,1.098,2.436,1.574,3.555   c0.592,1.396,0.914,2.713,1.84,3.949c0.82,1.097,1.426,2.199,2.061,3.402c0.713,1.349,1.385,2.643,2.252,3.886   c0.588,0.845,2.143,2.524,3.125,2.65c2.398,0.307,2.248-5.521,2.07-6.945c-0.17-1.371-0.215-2.825-0.17-4.216   c0.039-1.186,0.146-2.857-0.557-3.826c-1.145-1.58-3.695-0.397-3.895-2.52c0.422-0.603,0.332-1.138,3.146-2.064   c2.215-0.729,3.646-0.706,5.107-0.589c2.98,0.239,6.139-0.568,9.014,0.398c2.746,0.925,2.322,4.828,2.23,7.168   c-0.123,3.195,0.008,6.312,0,9.553c-0.004,1.477-0.062,2.912,1.736,2.793c1.688-0.113,1.859-1.532,2.664-2.704   c1.121-1.633,2.148-3.288,3.289-4.916c1.537-2.199,2-4.67,3.447-6.923c0.518-0.807,0.963-2.568,1.76-3.205   c0.604-0.481,1.75-0.275,2.48-0.275h1.736c1.33,0.016,2.686,0.035,4.051,0.083c1.967,0.068,4.17-0.359,6.121-0.084   c8.416,1.188-10.578,19.191-9.59,22.403c0.684,2.218,5.016,4.703,6.58,6.521C82.998,61.991,89.389,66.81,84.418,69.921z"/></g> 
+ 	   </symbol>
+    
+       <symbol id="etsy" viewBox="0 0 32 32">
+ 	        <g><path d="M11.417 3.26c0-0.432 0.047-0.693 0.786-0.693h9.953c1.734 0 2.698 1.479 3.391 4.255l0.557 2.224h1.693c0.307-6.307 0.573-9.047 0.573-9.047s-4.26 0.479-6.786 0.479h-12.729l-6.818-0.219v1.828l2.297 0.432c1.615 0.323 2 0.661 2.135 2.141 0 0 0.146 4.365 0.146 11.521 0 7.182-0.12 11.479-0.12 11.479 0 1.302-0.521 1.781-2.12 2.099l-2.297 0.443v1.797l6.839-0.219h11.401c2.583 0 8.521 0.219 8.521 0.219 0.141-1.563 1-8.641 1.141-9.417h-1.599l-1.714 3.88c-1.339 3.036-3.302 3.255-5.479 3.255h-6.542c-2.172 0-3.219-0.849-3.219-2.729v-9.922c0 0 4.823 0 6.385 0.125 1.214 0.089 1.948 0.438 2.344 2.13l0.521 2.26h1.88l-0.12-5.703 0.255-5.74h-1.854l-0.599 2.521c-0.375 1.656-0.641 1.958-2.339 2.135-2.219 0.224-6.422 0.182-6.422 0.182v-11.714h-0.063z"/></g>	
+ 	   </symbol>
+    
+       <symbol id="telegram" viewBox="0 0 31 26">
+ 	        <g><path d="M27.9975 0.575535L1.40252 10.831C-0.41248 11.56 -0.40198 12.5725 1.06952 13.024L7.89752 15.154L23.6955 5.18653C24.4425 4.73203 25.125 4.97653 24.564 5.47453L11.7645 17.026H11.7615L11.7645 17.0275L11.2935 24.0655C11.9835 24.0655 12.288 23.749 12.675 23.3755L15.9915 20.1505L22.89 25.246C24.162 25.9465 25.0755 25.5865 25.392 24.0685L29.9205 2.72654C30.384 0.868035 29.211 0.0265354 27.9975 0.575535Z"/></g>	
+ 	   </symbol>
+    </svg>	
+	<!--/sprait-->
+	
+	<div class="wrapper">
+		<div class="content">
+			
+			<!--header-->
+			<header>
+				<div class="container">
+					
+                    <div class="header__inner inner">
+					    <div class="inner__menu menu">
+					    	<nav class="menu__left">
+							    <a class="left__link" href="#">Контрагентам</a>
+                                <a class="left__link" href="#">Дизайнерам</a>
+                                <a class="left__link" href="#">Вакансии</a>
+						    </nav>
+					    </div>
+					    
+					    <div class="inner__menu menu-logo">
+					    	<a href="" class="header__logo">
+						       <img src="img/logo.png" alt="logo">
+						    </a>
+					    	<div class="heder__burger">
+					    	    <span></span>
+					        </div>
+					    </div>
+					    
+					    <div class="inner__menu menu">
+					    	<nav class="header__right">
+					    		<button class="btn header__right-search"> 
+                                   <img src="img/search.svg" alt="search">
+                                </button>
+                                <input class="right__field field-search" name="text" placeholder="Поиск" type="text"> 
+                                <input class="right__field field-input" name="text" placeholder="Вход/Регистрация" type="text"> 
+                                <button class="btn header__right-body">
+                                   <img src="img/body.svg" alt="body">
+                                </button>
+                                <button class="btn header__right-like">
+                                   <img src="img/heart.svg" alt="heart">
+                                </button>
+					    	</nav>
+					    </div>				
+					</div> <!--/header__inner-->
+				
+				</div><!--/container-->
+				
+			    <!-- mobile phone menu -->
+			    <div class="heder__menu-burger">
+					<div class="menu-burger__item"> <!-- проверить целесообразность -->
+					    <nav class="item__list">
+							<a class="left__link" href="#">Контрагентам</a>
+                            <a class="left__link" href="#">Дизайнерам</a>
+                            <a class="left__link" href="#">Вакансии</a>
+                            <input class="right__field field-input" name="text" placeholder="Вход/Регистрация" type="text"> 
+						</nav>
+				     <div class="menu-burger__item-center">
+				        <button class="btn header__right-body">
+                            <img src="img/body.svg" alt="body">
+                        </button>
+                        <button class="btn header__right-like">
+                            <img src="img/heart.svg" alt="heart">
+                        </button>
+				     </div>
+				     <div class="menu-burger__item-bottom">
+						 <a href="#" class="social__icon">
+				            <svg class="icon__icon">
+					            <use xlink:href="#youtube"></use>
+				            </svg>
+			             </a>
+                         <a href="#" class="social__icon">
+				            <svg class="icon__icon">
+					            <use xlink:href="#vk"></use>
+				            </svg>
+			             </a>
+                         <a href="#" class="social__icon">
+				            <svg class="icon__icon">
+					            <use xlink:href="#facebook"></use>
+				            </svg>
+			             </a>
+                         <a href="#" class="social__icon">
+				            <svg class="icon__icon">
+					            <use xlink:href="#telegram"></use>
+				            </svg>
+			             </a>
+                         <a href="#" class="social__icon">
+				            <svg class="icon__icon">
+					            <use xlink:href="#etsy"></use>
+				            </svg>
+			             </a>
+				     </div>
+                   </div>
+				</div><!-- /heder__menu-burger -->
+			    <!-- /mobile phone menu -->
+			
+                <div class="container">
+				    <div class="slogan">
+                       <h1 class="header__h1">Долго, дорого, богато!</h1>
+                       <a class="transfer-button button" href="#">Каталог изделий</a>
+                    </div>
+                </div>
+			
+			    <div class="header__bottom">
+			        <nav class="nav__catalog">
+                        <a class="catalog__link" href="#">
+                           <img src="img/Rectangle.svg" alt="logo">
+                        </a>
+                        <a class="catalog__link" href="#">
+                           <img src="img/Rectangle.svg" alt="logo">
+                        </a>
+                        <a class="catalog__link" href="#">
+                           <img src="img/Rectangle.svg" alt="logo">
+                        </a>
+                        <a class="catalog__link" href="#">
+                           <img src="img/Rectangle.svg" alt="logo">
+                        </a>
+                        <a class="catalog__link" href="#">
+                           <img src="img/Rectangle.svg" alt="logo">
+                        </a>
+                        <a class="catalog__link" href="#">
+                           <img src="img/Rectangle.svg" alt="logo">
+                        </a>
+                        <a class="catalog__link" href="#">
+                           <img src="img/Rectangle.svg" alt="logo">
+                        </a>
+                     </nav>
+			    </div>
+            </header>
+			<!--/header-->
+			
+			
+			<!-- goods -->
+			<section class="goods">
+			    <div class="container">
+			         
+		            <div class="goods__heading  heading">
+			           <div class="heading__text">К мероприятиям</div>
+			           <h2 class="heading__title">Настоящая красота здесь!</h2>
+			        </div>
+			        
+                     <div class="goods__buttons">
+						<div class="goods__buttons-item">
+							<a href="" class="goods__button">Свадьба</a>
+							<div class="goods__button-shadow"></div>
+						</div>
+						<div class="goods__buttons-item">
+							<a href="" class="goods__button">мужу</a>
+							<div class="goods__button-shadow"></div>
+						</div>
+						<div class="goods__buttons-item">
+							<a href="" class="goods__button">жене</a>
+							<div class="goods__button-shadow"></div>
+						</div>
+						<div class="goods__buttons-item">
+							<a href="" class="goods__button">партнеру</a>
+							<div class="goods__button-shadow"></div>
+						</div>
+						<div class="goods__buttons-item">
+							<a href="" class="goods__button">коллекции</a>
+							<div class="goods__button-shadow"></div>
+						</div>
+						<div class="goods__buttons-item">
+							<a href="" class="goods__button">редкость</a>
+							<div class="goods__button-shadow"></div>
+						</div>      
+			        </div>
+			         
+			        <div class="goods__row row">
+			           <div class="row__item item">
+			              <div class="goods__inner inner">
+                              <a href="#" class="inner__image">
+			                     <img src="img/goods/goods1.jpg" alt="photo">
+			                  </a>
+			                  <div class="inner__text">
+			                     <a href="#" class="goods__name">Кольца</a>
+			                 </div>
+			              </div>
+			           </div>
+			           <div class="row__item item">
+			              <div class="goods__inner inner">
+                              <a href="#" class="inner__image">
+			                     <img src="img/goods/goods2.jpg" alt="photo">
+			                  </a>
+			                  <div class="inner__text">
+			                     <a href="#" class="goods__name">серьги</a>
+			                 </div>
+			              </div>
+			           </div>
+			           <div class="row__item item">
+			              <div class="goods__inner inner">
+                              <a href="#" class="inner__image">
+			                     <img src="img/goods/goods3.jpg" alt="photo">
+			                  </a>
+			                  <div class="inner__text">
+			                     <a href="#" class="goods__name">подвески</a>
+			                 </div>
+			              </div>
+			           </div>
+			           <div class="row__item item">
+			              <div class="goods__inner inner">
+                              <a href="#" class="inner__image">
+			                     <img src="img/goods/goods4.jpg" alt="photo">
+			                  </a>
+			                  <div class="inner__text">
+			                     <a href="#" class="goods__name">запонки</a>
+			                 </div>
+			              </div>
+			           </div>
+			           <div class="row__item item">
+			              <div class="goods__inner inner">
+                              <a href="#" class="inner__image">
+			                     <img src="img/goods/goods5.jpg" alt="photo">
+			                  </a>
+			                  <div class="inner__text">
+			                     <a href="#" class="goods__name">браслеты</a>
+			                 </div>
+			              </div>
+			           </div>
+			           <div class="row__item item">
+			              <div class="goods__inner inner">
+                              <a href="#" class="inner__image">
+			                     <img src="img/goods/goods6.jpg" alt="photo">
+			                  </a>
+			                  <div class="inner__text">
+			                     <a href="#" class="goods__name">часы</a>
+			                 </div>
+			              </div>
+			           </div>
+			        </div>   <!-- /goods__row -->  
+			    </div> <!-- /container -->
+			</section>
+			<!-- /goods -->
+			
+			
+			<!-- proposal -->
+			<div class="proposal">
+				<div class="proposal__inward inward">
+				   <div class="inward__question">Не знаете, что выбрать?</div>
+				   <h2 class="inward__title">Посетите наши салоны в Москве</h2>
+				   <div class="inward__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum   </div>
+				   <a href="" class="inward__button">наши салоны</a>
+				</div>
+			</div>
+			<!-- /proposal -->
+			
+			
+			<!-- advice -->
+			<section class="advice">
+				<div class="container">
+				   
+				   <div class="advice__heading heading">
+					  <div class="heading__text">Полезные статьи</div>
+			          <h2 class="heading__title">Лучшие советы по подбору дорогих подарков</h2>
+				   </div>
+					
+                   <div class="advice__row row">
+			          <div class="row__item item">
+			             <div class="goods__inner inner">
+                             <a href="#" class="inner__image">
+			                    <img src="img/advice/advice1.jpg" alt="photo">
+			                 </a>
+			                 <div class="inner__text">
+			                     <a href="#" class="advice__name">Как выбрать<br> часы для своей<br> будущей жены</a>
+			                </div>
+			             </div>
+			          </div>
+                      <div class="row__item item">
+			             <div class="goods__inner inner">
+                             <a href="#" class="inner__image">
+			                    <img src="img/advice/advice2.jpg" alt="photo">
+			                 </a>
+			                 <div class="inner__text">
+			                     <a href="#" class="advice__name">Запонки для мужа:<br>7 ключевых правил<br>покупки аксессуара</a>
+			                </div>
+			             </div>
+			          </div>
+                      <div class="row__item item">
+			             <div class="goods__inner inner">
+                             <a href="#" class="inner__image">
+			                    <img src="img/advice/advice3.jpg" alt="photo">
+			                 </a>
+			                 <div class="inner__text">
+			                     <a href="#" class="advice__name">Как выбрать<br>обручальные кольца<br>молодоженам</a>
+			                </div>
+			             </div>
+			          </div>
+                   </div>   <!-- /advice__row --> 
+                   
+                   <div class="advice__buttons">
+                        <a class="advice-button button" href="#">читать наш блог</a>
+                   </div>
+                     
+				</div> <!-- закрытие container -->
+			</section>
+			<!-- /advice -->
+			
+			
+			<!-- social -->
+			<section class="social">
+			    <div class="container">
+			       <div class="social__heading heading">
+					 <div class="heading__text">#ojjo_jewerly</div>
+			         <h2 class="heading__title">Мы в социальных сетях</h2>
+				   </div>  
+                   <nav class="social__link link">
+						<div class="link__big">
+							<a href="#" class="link__image-big">
+			             	<img src="img/social/social1.jpg" alt="photo">
+							</a>
+							<a href="#" class="link__image-social">
+							<img src="img/social/social-icon.svg" alt="photo">
+							</a> 
+						</div>
+                        <a href="#" class="link__image">
+			            	<img src="img/social/social2.jpg" alt="photo">
+			          	</a>
+                      	<a href="#" class="link__image">
+			            	<img src="img/social/social3.jpg" alt="photo">
+			          	</a>
+                      	<a href="#" class="link__image">
+			            	<img src="img/social/social4.jpg" alt="photo">
+			          	</a>
+                      	<a href="#" class="link__image">
+			            	<img src="img/social/social5.jpg" alt="photo">
+			          	</a>
+                      	<div class="link__big">
+							<a href="#" class="link__image-big">
+						 	<img src="img/social/social6.jpg" alt="photo">
+							</a>
+							<a href="#" class="link__image-social">
+							<img src="img/social/social-icon.svg" alt="photo">
+							</a> 
+					</div>
+                   </nav>
+			    </div><!-- /container -->
+			</section>
+			<!-- /social -->
+			
+			
+			<!-- mailing -->
+			<section class="mailing">
+			    
+			    <div class="mailing__heading heading">
+					<div class="mailing__text">Полезные советы и персональный предложения</div>
+			        <h2 class="mailing__title">Эксклюзивная рассылка</h2>
+				</div>  
+				
+                <div class="mailing__field field">
+				   <ul class="field__nav">
+				     <li>
+				         <a href="#" class="field__list">Личный менеджер</a>
+				     </li>
+				     <li>
+				         <a href="#" class="field__list">Доставка и оформление</a>
+				     </li>
+				     <li>
+				         <a href="#" class="field__list">Индивидуальный дизайн</a>
+				     </li>
+				   </ul>
+				   <div class="field__forms" >
+				   	 <form class="field__form" action="#">
+				        <input class="form__email" name="email" placeholder="Ваш e-mail" type="email">
+                        <button class="field__button" type="submit">отправить</button>
+				     </form>
+				   </div> 
+				</div>
+				
+			</section>
+			<!-- /mailing -->
+				
+		</div> <!-- /content -->
+		
+        <footer class="footer">
+		    <div class="container">
+			    
+                <div class="footer__columns">
+                
+			        <div class="footer__item">
+			            <div class="footer__title">Полезные ссылки</div>
+			            <ul class="footer__nav">
+                          <li>
+                            <a href="#" class="footer__nav-link">Доставка</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer__nav-link">Оплата </a> 
+                          </li>
+                          <li>
+                             <a href="#" class="footer__nav-link">Акции</a>
+                          </li>
+                          <li>
+                            <a href="#" class="footer__nav-link">Политика конфиденциальности</a>
+                          </li>
+			            </ul>
+			        </div>
+			        
+			        <div class="footer__item">
+			            <div class="footer__title">оплата</div>
+			            <div class="footer__text text-payment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</div>
+			            <div class="footer__payment">
+			               <a href="#" class="footer__payment-icon">
+			            	 <img class="payment-icon__image" src="img/footer/visa.svg" alt="card">
+			               </a>
+			               <a href="#" class="footer__payment-icon">
+			            	 <img class="payment-icon__image" src="img/footer/mastercard.svg" alt="card">
+			               </a>
+			            </div>
+			        </div>
+			        
+			        <div class="footer__item">
+			            <div class="footer__title">контакты</div>
+			            <div class="footer__phone">8 (812) 234-56-55</div>
+			            <div class="footer__phone">8 (812) 234-56-55</div>
+			            <a class="footer__letter" href="mailto:ojjo@ojjo.ru">ojjo@ojjo.ru
+			            </a> 
+			        </div>
+			        
+			        <div class="footer__item">
+			            <div class="footer__title">социальные сети</div>
+			            <div class="footer__text footer__text-social">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</div>
+			            <div class="footer__social-icons">
+						    <a href="#" class="footer__social-icon">
+				              <svg class="footer-icon">
+					             <use xlink:href="#youtube"></use>
+				              </svg>
+			                </a>
+                            <a href="#" class="footer__social-icon">
+				              <svg class="footer-icon">
+					             <use xlink:href="#vk"></use>
+				              </svg>
+			                </a>
+                            <a href="#" class="footer__social-icon">
+				              <svg class="footer-icon">
+					             <use xlink:href="#facebook"></use>
+				              </svg>
+			                </a>
+                            <a href="#" class="footer__social-icon">
+				              <svg class="footer-icon">
+					             <use xlink:href="#telegram"></use>
+				              </svg>
+			                </a>
+                            <a href="#" class="footer__social-icon">
+				              <svg class="footer-icon">
+					             <use xlink:href="#etsy"></use>
+				              </svg>
+			                </a>
+						</div>
+			        </div>
+			        
+			    </div><!-- закрытие footer__columns -->
+			    
+                <div class="footer__bottom">
+			        <div class="footer__logo">(c) 2020 OJJO jewelry</div>
+			        <a href="" class="footer__link">Договор публичной офферты</a>
+			        <a href="" class="footer__link">Контрагентам</a>
+			        <div class="footer__made">Сделано Figma.info</div>
+			    </div>
+			    
+			</div><!-- закрытие container -->
+		</footer>
+	
+	</div>  <!-- /wrapper -->
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
